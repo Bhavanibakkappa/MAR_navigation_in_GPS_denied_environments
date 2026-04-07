@@ -1,0 +1,144 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+
+  <world name="default">
+
+    <!-- Ground -->
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <!-- Light -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <!-- ===== ROOM WALLS ===== -->
+
+    <model name="wall1">
+      <static>true</static>
+      <pose>2 0 0.5 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry><box><size>4 0.1 1</size></box></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><box><size>4 0.1 1</size></box></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name="wall2">
+      <static>true</static>
+      <pose>-2 0 0.5 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry><box><size>4 0.1 1</size></box></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><box><size>4 0.1 1</size></box></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name="wall3">
+      <static>true</static>
+      <pose>0 2 0.5 0 0 1.57</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry><box><size>4 0.1 1</size></box></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><box><size>4 0.1 1</size></box></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name="wall4">
+      <static>true</static>
+      <pose>0 -2 0.5 0 0 1.57</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry><box><size>4 0.1 1</size></box></geometry>
+        </collision>
+        <visual name="visual">
+          <geometry><box><size>4 0.1 1</size></box></geometry>
+        </visual>
+      </link>
+    </model>
+
+    <!-- ===== CORRIDOR WALLS ===== -->
+
+    <model name="corridor1">
+      <static>true</static>
+      <pose>0 0 0.5 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box><size>6 0.1 1</size></box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box><size>6 0.1 1</size></box>
+          </geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name="corridor2">
+      <static>true</static>
+      <pose>0 1.5 0.5 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box><size>6 0.1 1</size></box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box><size>6 0.1 1</size></box>
+          </geometry>
+        </visual>
+      </link>
+    </model>
+
+    <!-- ===== OBSTACLES ===== -->
+
+    <model name="box1">
+      <static>true</static>
+      <pose>0 0 0.5 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box><size>1 1 1</size></box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box><size>1 1 1</size></box>
+          </geometry>
+        </visual>
+      </link>
+    </model>
+
+    <model name="box2">
+      <static>true</static>
+      <pose>1 1 0.5 0 0 0</pose>
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box><size>0.5 0.5 1</size></box>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <geometry>
+            <box><size>0.5 0.5 1</size></box>
+          </geometry>
+        </visual>
+      </link>
+    </model>
+
+  </world>
+
+</sdf>

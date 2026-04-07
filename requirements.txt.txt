@@ -1,0 +1,18 @@
+# ROS2 Core
+ros-humble-desktop
+
+# TurtleBot3 Packages
+ros-humble-turtlebot3
+ros-humble-turtlebot3-gazebo
+
+# Gazebo + ROS Integration
+ros-humble-gazebo-ros-pkgs
+
+# SLAM (optional - if mentioned in future work)
+ros-humble-slam-toolbox
+
+# Teleoperation
+ros-humble-teleop-twist-keyboard
+
+# RViz for visualization
+ros-humble-rviz2
