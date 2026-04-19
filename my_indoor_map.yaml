@@ -1,4 +1,4 @@
-image: my_indoor_map.pgm
+image: /home/pes2ug23cs125/MAR_navigation_in_GPS_denied_environments/my_indoor_map.pgm
 mode: trinary
 resolution: 0.05
 origin: [-0.0636, -1.31e-05, 0]
